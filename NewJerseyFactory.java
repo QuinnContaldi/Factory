@@ -1,13 +1,6 @@
-public class NewJerseyFactory extends Factory{
-
-    Slots createStraightSlot(){
-        return new NewJerseyStraight();
+public class NewJerseyFactory {
+    SlotComponentFactory slotComponentFactory;
+    public NewJerseyFactory(SlotComponentFactory slotComponentFactory){
+        this.slotComponentFactory = slotComponentFactory;
     }
-    Slots createBGSlot(){
-        return new NewJerseyBG();
-    }
-    Slots createProgressiveSlot(){
-        return new NewJerseyProgressive();
-    }
-    
 }

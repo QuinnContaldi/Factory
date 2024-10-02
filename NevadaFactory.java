@@ -1,12 +1,8 @@
 public class NevadaFactory extends Factory{
+    SlotComponentFactory slotComponentFactory;
 
-    Slots createStraightSlot(){
-        return new NevadaStaright();
+    public NevadaFactory(SlotComponentFactory slotComponentFactory){
+        this.slotComponentFactory = slotComponentFactory;
     }
-    Slots createBGSlot(){
-        return new NevadaBG();
-    }
-    Slots createProgressiveSlot(){
-        return new NevadaProgressive();
-    }
+
 }
